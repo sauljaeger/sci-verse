@@ -7,8 +7,10 @@ import 'package:sciverse/pages/home.dart';
 import 'package:sciverse/pages/profile.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '3d_home.dart';
+
 class Homepage extends StatefulWidget {
-  const Homepage({super.key});
+  const Homepage({super.key,required});
 
   @override
   State<Homepage> createState() => _HomepageState();
@@ -34,7 +36,7 @@ class _HomepageState extends State<Homepage> {
   // List of pages for the BottomNavigationBar
   final List<Widget> _pages = [
     const Home(),
-    ExploreScreen(),
+    // Explore(cameras: ,),
     const Profile(),
   ];
 
